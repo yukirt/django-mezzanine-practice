@@ -101,18 +101,19 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei'
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "en"
+LANGUAGE_CODE = "zh-tw"
 
 # Supported languages
 LANGUAGES = (
     ('en', _('English')),
+    ("zh-tw", _(u"繁體中文")),
 )
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
@@ -127,7 +128,7 @@ SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = False
+USE_I18N = True
 
 AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
 
